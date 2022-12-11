@@ -1,0 +1,17 @@
+{
+   "scene": {"type": "union",
+             "children": [
+                {"type": "plane",
+                 "scale": 1,
+                 "center": {"z": -4},
+                 "normal": {"z": 1},
+                 "material": {"ka": 0.7, "type": "textured", "texture": "soccerField.jpg"}
+                },
+                {"type": "sphere",
+                 "radius": 1.2,
+                 "center": {"z": -2, "y": 10},
+                 "material": {"reflectiveness": 0.1 , "ka": 0.5, "kd": 0.8, "ks": 0.7, "type": "textured", "texture": "soccerBall.jpg"}
+                } 
+            ]},
+   "lighting": {"type": "phong", "shadows": true, "lights": [{"position": {"x": 0, "y": 30, "z": -2}}]}
+}

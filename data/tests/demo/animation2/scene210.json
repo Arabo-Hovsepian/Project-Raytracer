@@ -1,0 +1,57 @@
+{
+    "scene": {
+        "type": "union",
+        "children": [
+            {
+                "type": "moverotation",
+                "rotation": {
+                    "z": 0,
+                    "y": 90
+                },
+                "movement": {
+                    "y": 450
+                },
+                "child": {
+                    "type": "cylinder",
+                    "radius": 150,
+                    "material": {
+                        "ka": 0.2,
+                        "kd": 0.8,
+                        "ks": 0,
+                        "alpha": 100,
+                        "color": { "color": 255 },
+                        "transparency": 0.6,
+                        "refractionIndex": 1.9
+                    }
+                }
+            },
+            {
+                "type": "moverotation",
+                "rotation": {
+                    "z": 0,
+                    "y": 0
+                },
+                "movement": {
+                    "y": 450
+                },
+                "child": {
+                    "type": "cone",
+                    "scale": 2,
+                    "material": {
+                        "type": "textured",
+                        "texture": "earth.jpg"
+                    }
+                }
+
+            }
+        ],
+
+    },
+   "reflections": 5,
+   "camera": {"x": 290, "y": -44},
+   "view": {"x": -290, "y": 344},
+   "lighting": {"type": "phong", "ambient": {"color": 128}, "shadows": false,
+                "lights": [{"position": {"x": -50, "y": -700, "z": 30}, "color": {"r": 255, "g": 0, "b": 0}},
+                           {"position": {"x": 50, "y": -700, "z": 30}, "color": {"r": 0, "g": 255, "b": 0}},
+                           {"position": {"x": 0, "y": -700, "z": -60}, "color": {"r": 0, "g": 0, "b": 255}}]}
+}
